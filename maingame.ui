@@ -23,7 +23,7 @@
       <height>521</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="SquareA" rowminimumheight="0">
+    <layout class="QGridLayout" name="SquareA">
      <property name="sizeConstraint">
       <enum>QLayout::SetNoConstraint</enum>
      </property>

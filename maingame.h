@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QTextEdit>
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class mainGame;
@@ -25,8 +26,11 @@ private:
     Ui::mainGame *ui;
     void gridCreation();
     void deleteGrid();
-    int generator(int row, int col);
+    bool generator(int row, int col);
 
+    int gridValues[9][9];
+
+    int getInnerCellIndex(int row, int col);
     bool isSafe(int row, int col, int num);
 
     int retry(int m, int n);
